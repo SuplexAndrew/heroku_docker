@@ -27,4 +27,4 @@ app.get('/users', async(req, res) => {
   res.json(users)
 })
 
-app.listen(3030, () => start())
+app.listen(process.env.PORT || 3000, () => start())
